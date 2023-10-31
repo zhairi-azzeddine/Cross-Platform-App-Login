@@ -1,0 +1,5 @@
+{
+    "qmlhelper.debug.sortMembers": false,
+    "qmlhelper.debug.filterFunctions": true,
+    "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools"
+}

@@ -1,0 +1,33 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "C++ Debug",
+            "request": "launch",
+            "type": "cppdbg",
+            "linux": {
+                "type": "cppdbg"
+            },
+            "windows": {
+                "type": "cppvsdbg"
+            },
+            "cwd": "${workspaceFolder}",
+            "program": "${command:cmake.launchTargetPath}",
+            "args": [
+                "-qmljsdebugger=host:localhost,port:12150,block,services:DebugMessages,QmlDebugger,V8Debugger"
+            ],
+            "visualizerFile": "c:\\Users\\Aninoss\\AppData\\Roaming\\Code\\User\\workspaceStorage\\5963ab8f8d23b45b5058b4af30deaf55\\tonka3000.qtvsctools\\qt.natvis.xml"
+        },
+        {
+            "name": "QML Debug",
+            "type": "qml",
+            "request": "attach",
+            "host": "localhost",
+            "port": 12150,
+            "paths": {
+                "qrc:/interfaces": "${workspaceFolder}/interfaces"
+            },
+            "hotReload": true
+        }
+    ]
+}
